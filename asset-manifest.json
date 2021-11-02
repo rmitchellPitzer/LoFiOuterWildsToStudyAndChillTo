@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.a216f1f6.chunk.css",
+    "main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.2425a34f.chunk.js",
+    "main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.2425a34f.chunk.js.map",
+    "runtime-main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/runtime-main.eaaee8b4.js",
+    "runtime-main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/runtime-main.eaaee8b4.js.map",
+    "static/js/2.f0cf39b1.chunk.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.f0cf39b1.chunk.js",
+    "static/js/2.f0cf39b1.chunk.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.f0cf39b1.chunk.js.map",
+    "static/js/3.45b6d384.chunk.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/3.45b6d384.chunk.js",
+    "static/js/3.45b6d384.chunk.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/3.45b6d384.chunk.js.map",
+    "index.html": "/LoFiOuterWildsToStudyAndChillTo/index.html",
+    "static/css/main.a216f1f6.chunk.css.map": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.a216f1f6.chunk.css.map",
+    "static/js/2.f0cf39b1.chunk.js.LICENSE.txt": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.f0cf39b1.chunk.js.LICENSE.txt",
+    "static/media/Chert21.63b564e7.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Chert21.63b564e7.mp3",
+    "static/media/Esker21.4c7bd129.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Esker21.4c7bd129.mp3",
+    "static/media/Feldspar21.12043d13.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Feldspar21.12043d13.mp3",
+    "static/media/Gabbro21.a51e1c58.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Gabbro21.a51e1c58.mp3",
+    "static/media/Prisoner21.a8fb6ab1.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Prisoner21.a8fb6ab1.mp3",
+    "static/media/Riebek21.ce044a4c.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Riebek21.ce044a4c.mp3",
+    "static/media/Solanum21.226048e7.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Solanum21.226048e7.mp3",
+    "static/media/logo.6ce24c58.svg": "/LoFiOuterWildsToStudyAndChillTo/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eaaee8b4.js",
+    "static/js/2.f0cf39b1.chunk.js",
+    "static/css/main.a216f1f6.chunk.css",
+    "static/js/main.2425a34f.chunk.js"
+  ]
+}
