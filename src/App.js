@@ -2,6 +2,10 @@ import logo from './logo.svg';
 import './App.css';
 import React from "react";
 import {Howl, Howler} from "howler";
+import {RangeStepInput} from 'react-range-step-input';
+
+
+// import the audio files
 
 import Chert21 from "../src/Chert21.mp3";
 import Esker21 from "../src/Esker21.mp3";
@@ -11,6 +15,11 @@ import Prisoner21 from "../src/Prisoner21.mp3";
 import Riebek21 from "../src/Riebek21.mp3";
 import Solanum21 from "../src/Solanum21.mp3";
 
+// and the ambience files
+
+import campfire from "../src/campfire.mp3";
+import rain from "../src/giantsdeep.mp3"
+import nature from "../src/crickets.mp3"
 
 // init sound/music files
 
@@ -38,6 +47,20 @@ sound7 = new Howl({
     src: [Solanum21], loop: true});
 
 
+//ambience as well
+
+let sound8;
+sound8 = new Howl({
+    src: [campfire], loop: true});
+
+let sound9;
+sound9 = new Howl({
+    src: [rain], loop: true});
+let sound10;
+sound10 = new Howl({
+    src: [nature], loop: true});
+
+
 // create the states for check boxes
 
 
@@ -49,6 +72,9 @@ function App() {
     const [checkedPrisoner, setCheckedPrisoner] = React.useState(false);
     const [checkedRiebek, setCheckedRiebek] = React.useState(false);
     const [checkedSolanum, setCheckedSolanum] = React.useState(false);
+    const [checkedFire, setCheckedFire] = React.useState(false);
+    const [checkedRain, setCheckedRain] = React.useState(false);
+    const [checkedCrickets, setCheckedCrickets] = React.useState(false);
 
     // Massive wall of text for handling audio sync between each instrument.
     // Will refactor this later to be less spaghetti code-y, but right now it works and
@@ -510,71 +536,129 @@ function App() {
             sound7.playing() ? sound7.pause() : sound7.play();}
     };
 
+    const handleChangeFire = () => {
+        setCheckedFire(!checkedFire);
+        if (sound8.playing()){
+            sound8.pause();
+        }
+        else{
+            sound8.play();
+        }
+    };
 
+    const handleChangeRain = () => {
+        setCheckedRain(!checkedRain);
+        if (sound9.playing()){
+            sound9.pause();
+        }
+        else{
+            sound9.play();
+        }
+    };
+
+    const handleChangeCrickets = () => {
+        setCheckedCrickets(!checkedCrickets);
+        if (sound10.playing()){
+            sound10.pause();
+        }
+        else{
+            sound10.play();
+        }
+    };
 
 
 
     return (
         <div className="wholeDiv">
-            <div className="Welcome">
-                Hi! This is some outer wilds soundboard I hackily made. Enjoy!
-            </div>
-            <ul className="list">
-                <Checkbox
-                    className = "checkbox"
-                    label="Chert"
-                    value={checkedChert}
-                    onChange={handleChangeChert}
-                />
+                <div id="top" className="Checkbox">
+                    <Checkbox
+                        label="Chert"
+                        className = "asdf"
+                        value={checkedChert}
+                        onChange={handleChangeChert}
+                    />
 
-                <Checkbox
-                    label="Esker"
-                    value={checkedEsker}
-                    onChange={handleChangeEsker}
-                />
+                </div>
 
+                <div className="Checkbox">
+                    <Checkbox
+                        label="Esker"
+                        value={checkedEsker}
+                        onChange={handleChangeEsker}
+                    />
+                </div>
+
+
+            <div className="Checkbox">
                 <Checkbox
                     label="Feldspar"
                     value={checkedFeldspar}
                     onChange={handleChangeFeldspar}
                 />
+            </div>
+
+            <div className="Checkbox">
 
                 <Checkbox
-                    label="Gabbro"
-                    value={checkedGabbro}
-                    onChange={handleChangeGabbro}
-                />
+                        label="Gabbro"
+                        value={checkedGabbro}
+                        onChange={handleChangeGabbro}
+                    />
+            </div>
+
+
+
+            <div className="Checkbox">
 
                 <Checkbox
                     label="Prisoner"
                     value={checkedPrisoner}
                     onChange={handleChangePrisoner}
                 />
+            </div>
 
+
+                <div className="Checkbox">
                 <Checkbox
                     label="Riebek"
                     value={checkedRiebek}
                     onChange={handleChangeRiebek}
                 />
+                </div>
 
+                    <div id="bottom" className="Checkbox">
                 <Checkbox
                     label="Solanum"
                     value={checkedSolanum}
                     onChange={handleChangeSolanum}
                 />
 
-            </ul>
-            {/*<button onClick={playAudio}>*/}
-            {/*    Play selected!*/}
-            {/*</button>*/}
 
-            {/*<button onClick={() => pauseAudio()}>*/}
-            {/*    Pause selected*/}
-            {/*</button>*/}
+                    </div>
 
-            {/*<button onClick={playAudio}>*/}
-            {/*    Toggle Loop!*/}
-            {/*</button>*/}
+            <div id = "topAmbience" className="CheckboxAmbience">
+                <Checkbox
+                    label="Fire"
+                    value={checkedFire}
+                    onChange={handleChangeFire}
+                />
+            </div>
+
+            <div id = "middleAmbience" className="CheckboxAmbience">
+                <Checkbox
+                    label="Rain"
+                    value={checkedRain}
+                    onChange={handleChangeRain}
+                />
+            </div>
+
+            <div id = "bottomAmbience"className="CheckboxAmbience">
+                <Checkbox
+                    label="Crickets"
+                    value={checkedCrickets}
+                    onChange={handleChangeCrickets}
+                />
+            </div>
         </div>
     );
 };

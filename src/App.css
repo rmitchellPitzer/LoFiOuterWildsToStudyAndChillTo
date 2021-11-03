@@ -1,23 +1,109 @@
 .wholeDiv{
   font-family: brandon-grotesque, sans-serif;
-
   font-weight: 400;
   font-kerning: inherit;
   font-style: normal;
-}
 
-.list{
-  font-size: xx-large;
-  display: flex;
-  flex-direction: column-reverse;
-  background-color: #5e645f;
-  width: fit-content;
-  padding-right: 20px;
-  padding-left: 50px;
+  display: grid;
+  grid-template-columns: calc(100vw - 270px);
+  grid-template-rows: 70px;
 }
 
 .Welcome{
   color: aliceblue;
   text-align: center;
   font-size: xx-large;
+}
+
+.Checkbox{
+  grid-column: 1;
+  padding-right: 20px;
+  padding-left: 50px;
+  background: rgba(61, 63, 64, .7);
+  width: 200px;
+  height:70px;
+  font-size: 40px;
+  transition-duration: .5s;
+  color: #ffffff;
+
+}
+
+#top{
+  border-top-right-radius: 15px;
+}
+
+#bottom{
+  border-bottom-right-radius: 15px;
+}
+
+.Checkbox:Hover{
+  font-size: 45px;
+  transition-duration: .5s;
+}
+
+.CheckboxAmbience{
+  grid-column: 2;
+  background: rgba(61, 63, 64, .7);
+  width: 200px;
+  height:70px;
+  padding-right: 20px;
+  padding-left: 50px;
+  font-size: 40px;
+  transition-duration: .5s;
+  color: #ffffff;
+}
+
+.CheckboxAmbience:Hover{
+  font-size: 45px;
+  transition-duration: .5s;
+}
+
+#topAmbience {
+  grid-row: 1;
+  border-top-left-radius: 15px;
+}
+
+#middleAmbience {
+  grid-row: 2;
+}
+
+#bottomAmbience {
+  grid-row: 3;
+  border-bottom-left-radius: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+  .Checkbox{
+    padding-right: 20px;
+    padding-left: 50px;
+
+
+  }
+  .CheckboxAmbience{
+    grid-column: 1;
+    padding-right: 20px;
+    padding-left: 50px;
+  }
+
+  #topAmbience {
+    grid-row: 8;
+  }
+
+  #middleAmbience {
+    grid-row: 9;
+  }
+
+  #bottomAmbience {
+    grid-row: 10;
+    border-bottom-right-radius: 15px;
+  }
+
+  #bottom{
+    border-bottom-right-radius: 0px;
+  }
+
+
+
+
 }

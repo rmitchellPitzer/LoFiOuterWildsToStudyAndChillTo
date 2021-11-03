@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-image: url("https://d34urnl45u363e.cloudfront.net/store/mediaobject/63899/image/large-c6a82589eb7b45a1ec72cfacff3860f0.png") ;
+  background-image: url("background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
