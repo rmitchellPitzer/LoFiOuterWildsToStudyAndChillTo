@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.6c291760.chunk.css",
-    "main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.a92f41b2.chunk.js",
-    "main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.a92f41b2.chunk.js.map",
+    "main.css": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.057b51ce.chunk.css",
+    "main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.ed18078f.chunk.js",
+    "main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.ed18078f.chunk.js.map",
     "runtime-main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/runtime-main.d5cf8323.js",
     "runtime-main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/runtime-main.d5cf8323.js.map",
     "static/js/2.405cb742.chunk.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.405cb742.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.ca239a5a.chunk.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/3.ca239a5a.chunk.js",
     "static/js/3.ca239a5a.chunk.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/3.ca239a5a.chunk.js.map",
     "index.html": "/LoFiOuterWildsToStudyAndChillTo/index.html",
-    "static/css/main.6c291760.chunk.css.map": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.6c291760.chunk.css.map",
+    "static/css/main.057b51ce.chunk.css.map": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.057b51ce.chunk.css.map",
     "static/js/2.405cb742.chunk.js.LICENSE.txt": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.405cb742.chunk.js.LICENSE.txt",
     "static/media/App.css": "/LoFiOuterWildsToStudyAndChillTo/static/media/Solanum.7a247231.png",
     "static/media/Chert21.63b564e7.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Chert21.63b564e7.mp3",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.d5cf8323.js",
     "static/js/2.405cb742.chunk.js",
-    "static/css/main.6c291760.chunk.css",
-    "static/js/main.a92f41b2.chunk.js"
+    "static/css/main.057b51ce.chunk.css",
+    "static/js/main.ed18078f.chunk.js"
   ]
 }
