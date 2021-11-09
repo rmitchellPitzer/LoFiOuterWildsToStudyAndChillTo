@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.c6ce1e36.chunk.css",
-    "main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.ed18078f.chunk.js",
-    "main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.ed18078f.chunk.js.map",
+    "main.css": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.6b67161a.chunk.css",
+    "main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.30c2ef61.chunk.js",
+    "main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/main.30c2ef61.chunk.js.map",
     "runtime-main.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/runtime-main.d5cf8323.js",
     "runtime-main.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/runtime-main.d5cf8323.js.map",
-    "static/js/2.405cb742.chunk.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.405cb742.chunk.js",
-    "static/js/2.405cb742.chunk.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.405cb742.chunk.js.map",
+    "static/js/2.5558e4f5.chunk.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.5558e4f5.chunk.js",
+    "static/js/2.5558e4f5.chunk.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.5558e4f5.chunk.js.map",
     "static/js/3.ca239a5a.chunk.js": "/LoFiOuterWildsToStudyAndChillTo/static/js/3.ca239a5a.chunk.js",
     "static/js/3.ca239a5a.chunk.js.map": "/LoFiOuterWildsToStudyAndChillTo/static/js/3.ca239a5a.chunk.js.map",
     "index.html": "/LoFiOuterWildsToStudyAndChillTo/index.html",
-    "static/css/main.c6ce1e36.chunk.css.map": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.c6ce1e36.chunk.css.map",
-    "static/js/2.405cb742.chunk.js.LICENSE.txt": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.405cb742.chunk.js.LICENSE.txt",
+    "static/css/main.6b67161a.chunk.css.map": "/LoFiOuterWildsToStudyAndChillTo/static/css/main.6b67161a.chunk.css.map",
+    "static/js/2.5558e4f5.chunk.js.LICENSE.txt": "/LoFiOuterWildsToStudyAndChillTo/static/js/2.5558e4f5.chunk.js.LICENSE.txt",
     "static/media/App.css": "/LoFiOuterWildsToStudyAndChillTo/static/media/Solanum.7a247231.png",
     "static/media/Chert21.63b564e7.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Chert21.63b564e7.mp3",
     "static/media/Esker21.4c7bd129.mp3": "/LoFiOuterWildsToStudyAndChillTo/static/media/Esker21.4c7bd129.mp3",
@@ -27,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.d5cf8323.js",
-    "static/js/2.405cb742.chunk.js",
-    "static/css/main.c6ce1e36.chunk.css",
-    "static/js/main.ed18078f.chunk.js"
+    "static/js/2.5558e4f5.chunk.js",
+    "static/css/main.6b67161a.chunk.css",
+    "static/js/main.30c2ef61.chunk.js"
   ]
 }
