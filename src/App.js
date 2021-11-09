@@ -3,6 +3,7 @@ import './App.css';
 import React from "react";
 import {Howl, Howler} from "howler";
 import {RangeStepInput} from 'react-range-step-input';
+import ReactDOM from "react-dom";
 
 
 // import the audio files
@@ -62,6 +63,8 @@ sound10 = new Howl({
 
 
 // create the states for check boxes
+
+var selectedArray = ["backgroundDefault"];
 
 
 function App() {
@@ -564,18 +567,118 @@ function App() {
         else{
             sound10.play();
         }
+
     };
 
 
 
+
+
+    const nameArray = ["Solanum", "Riebek", "Prisoner", "Gabbro", "Feldspar", "Esker", "Chert"]
+
+
+
+
+
+
+
+    const clickChert = () => {
+        handleChangeChert();
+        if (!checkedChert === true){
+            selectedArray.push("backgroundChert")
+        }
+        else {
+            selectedArray = selectedArray.filter(function(item) {
+                return (item !== "backgroundChert")})
+        }
+    }
+
+    const clickFeldspar = () => {
+        handleChangeFeldspar();
+        if (!checkedFeldspar === true){
+            selectedArray.push("backgroundFeldspar")
+        }
+        else {
+            selectedArray = selectedArray.filter(function(item) {
+                return (item !== "backgroundFeldspar")})
+        }
+    }
+
+    const clickGabbro = () => {
+        handleChangeGabbro();
+        if (!checkedGabbro === true){
+            selectedArray.push("backgroundGabbro")
+        }
+        else {
+            selectedArray = selectedArray.filter(function(item) {
+                return (item !== "backgroundGabbro")})
+        }
+    }
+
+
+    const clickPrisoner = () => {
+        handleChangePrisoner();
+        if (!checkedPrisoner === true){
+            selectedArray.push("backgroundPrisoner")
+        }
+        else {
+            selectedArray = selectedArray.filter(function(item) {
+                return (item !== "backgroundPrisoner")})
+        }
+    }
+
+
+    const clickRiebek = () => {
+        handleChangeRiebek();
+        if (!checkedRiebek === true){
+            selectedArray.push("backgroundRiebek")
+        }
+        else {
+            selectedArray = selectedArray.filter(function(item) {
+                return (item !== "backgroundRiebek")})
+        }
+    }
+
+
+    const clickSolanum = () => {
+        handleChangeSolanum();
+        if (!checkedSolanum === true){
+            selectedArray.push("backgroundSolanum")
+        }
+        else {
+            selectedArray = selectedArray.filter(function(item) {
+                return (item !== "backgroundSolanum")})
+        }
+    }
+
+
+    const clickEsker = () => {
+        handleChangeEsker();
+        if (!checkedEsker === true){
+            console.log("Adding Esker")
+            selectedArray.push("backgroundEsker")
+        }
+        else {
+            console.log("removing Esker")
+            selectedArray = selectedArray.filter(function(item) {
+                return (item !== "backgroundEsker")})
+        }
+        console.log(selectedArray)
+    }
+
+
+    function getBackground() {
+        return selectedArray[selectedArray.length - 1]}
+
     return (
-        <div className="wholeDiv">
-                <div id="top" className="Checkbox">
+        <div className="whole-div">
+            <div className="FlexDiv">
+            <div id="top" className="Checkbox">
                     <Checkbox
                         label="Chert"
                         className = "asdf"
                         value={checkedChert}
-                        onChange={handleChangeChert}
+                        onChange={clickChert}
                     />
 
                 </div>
@@ -584,7 +687,7 @@ function App() {
                     <Checkbox
                         label="Esker"
                         value={checkedEsker}
-                        onChange={handleChangeEsker}
+                        onChange={clickEsker}
                     />
                 </div>
 
@@ -593,7 +696,7 @@ function App() {
                 <Checkbox
                     label="Feldspar"
                     value={checkedFeldspar}
-                    onChange={handleChangeFeldspar}
+                    onChange={clickFeldspar}
                 />
             </div>
 
@@ -602,7 +705,7 @@ function App() {
                 <Checkbox
                         label="Gabbro"
                         value={checkedGabbro}
-                        onChange={handleChangeGabbro}
+                        onChange={clickGabbro}
                     />
             </div>
 
@@ -613,7 +716,7 @@ function App() {
                 <Checkbox
                     label="Prisoner"
                     value={checkedPrisoner}
-                    onChange={handleChangePrisoner}
+                    onChange={clickPrisoner}
                 />
             </div>
 
@@ -622,7 +725,7 @@ function App() {
                 <Checkbox
                     label="Riebek"
                     value={checkedRiebek}
-                    onChange={handleChangeRiebek}
+                    onChange={clickRiebek}
                 />
                 </div>
 
@@ -630,7 +733,7 @@ function App() {
                 <Checkbox
                     label="Solanum"
                     value={checkedSolanum}
-                    onChange={handleChangeSolanum}
+                    onChange={clickSolanum}
                 />
 
 
@@ -659,7 +762,23 @@ function App() {
                     onChange={handleChangeCrickets}
                 />
             </div>
+            </div>,
+            <div id={getBackground()} className="background"></div>,
+            <div className = "info">
+                Project by ThrowawayHeights, Art used with permission from Meli-luminati
+                <div>
+                    <a href="https://meliluminati.carrd.co/" target="_blank">Meli-luminati Website</a>
+                    <span> , </span>
+                    <a href="https://www.instagram.com/meli.luminati/?hl=en" target="_blank"> Instagram</a>
+
+                    <span> , </span>
+                    <a href="https://twitter.com/meliluminati" target="_blank"> Twitter</a>
+                    <span> , </span>
+                    <a href="https://www.reddit.com/user/Meli-luminati/" target="_blank"> Reddit</a>
+                </div>
+            </div>
         </div>
+
     );
 };
 
