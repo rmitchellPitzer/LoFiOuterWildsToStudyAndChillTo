@@ -1,4 +1,4 @@
-# Outer Sounds
+# Music From The Outer Wilds
 
 Hi! A couple things to make a disclaimer to:
 
